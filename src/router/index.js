@@ -1,19 +1,31 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Logout from '../views/Logout.vue'
-import Update from '../views/Update.vue'
 
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../views/Home.vue";
+import Logout from "../views/Logout.vue";
+import Index from "../views/Index.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: "/",
+    name: "Home",
+    component: Home,
   },
   {
+
+    path: "/logout",
+    name: "Logout",
+    component: Logout,
+  },
+  {
+    path: "/index",
+    name: "index",
+    component: Index,
+  },
+];
+
     path: '/logout',
     name: 'Logout',
     component: Logout
@@ -23,12 +35,12 @@ const routes = [
     name: 'Update',
     component: Update
   }
-]
+
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;

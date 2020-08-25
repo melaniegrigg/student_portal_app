@@ -1,3 +1,4 @@
+
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
@@ -13,6 +14,7 @@ const routes = [
     component: Home,
   },
   {
+
     path: "/logout",
     name: "Logout",
     component: Logout,
@@ -23,6 +25,17 @@ const routes = [
     component: Index,
   },
 ];
+
+    path: '/logout',
+    name: 'Logout',
+    component: Logout
+  },
+  {
+    path: '/update',
+    name: 'Update',
+    component: Update
+  }
+
 
 const router = new VueRouter({
   mode: "history",

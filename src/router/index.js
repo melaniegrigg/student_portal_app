@@ -1,3 +1,4 @@
+
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
@@ -13,9 +14,16 @@ const routes = [
     component: Home,
   },
   {
+<<<<<<< HEAD
     path: "/login",
     name: "Login",
     component: Login,
+=======
+
+    path: "/logout",
+    name: "Logout",
+    component: Logout,
+>>>>>>> 51f97e4b95a39db1f49c1926c45ffef4d7b001ed
   },
   {
     path: "/student",
@@ -23,6 +31,17 @@ const routes = [
     component: Student,
   },
 ];
+
+    path: '/logout',
+    name: 'Logout',
+    component: Logout
+  },
+  {
+    path: '/update',
+    name: 'Update',
+    component: Update
+  }
+
 
 const router = new VueRouter({
   mode: "history",

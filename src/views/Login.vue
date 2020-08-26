@@ -1,5 +1,5 @@
 <template>
-  <div class="logout">
+  <div class="login">
   </div>
 </template>
 
@@ -15,5 +15,3 @@ export default {
 };
 </script>
 
-  </div>
-</template>

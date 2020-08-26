@@ -2,8 +2,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Logout from "../views/Logout.vue";
-import Index from "../views/Index.vue";
+import Login from "../views/Login.vue";
+import Student from "../views/Student.vue";
 
 Vue.use(VueRouter);
 
@@ -14,15 +14,21 @@ const routes = [
     component: Home,
   },
   {
+<<<<<<< HEAD
+    path: "/login",
+    name: "Login",
+    component: Login,
+=======
 
     path: "/logout",
     name: "Logout",
     component: Logout,
+>>>>>>> 51f97e4b95a39db1f49c1926c45ffef4d7b001ed
   },
   {
-    path: "/index",
-    name: "index",
-    component: Index,
+    path: "/student",
+    name: "Student",
+    component: Student,
   },
 ];
 

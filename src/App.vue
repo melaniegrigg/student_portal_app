@@ -2,8 +2,12 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
+<<<<<<< HEAD
+      <router-link to="/login">Login</router-link>
+=======
       <router-link to="/logout">Logout</router-link> |
       <router-link to="/update">Update</router-link>
+>>>>>>> 51f97e4b95a39db1f49c1926c45ffef4d7b001ed
     </div>
     <router-view/>
   </div>
